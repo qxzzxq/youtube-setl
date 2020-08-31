@@ -14,16 +14,16 @@ object App {
 
     // Register Repositories
     setl
-      .setSparkRepository[Video]("videosCARepository", deliveryId = "videosCA")
-      .setSparkRepository[Video]("videosDERepository", deliveryId = "videosDE")
-      .setSparkRepository[Video]("videosFRRepository", deliveryId = "videosFR")
-      .setSparkRepository[Video]("videosGBRepository", deliveryId = "videosGB")
-      .setSparkRepository[Video]("videosINRepository", deliveryId = "videosIN")
-      .setSparkRepository[Video]("videosJPRepository", deliveryId = "videosJP")
-      .setSparkRepository[Video]("videosKRRepository", deliveryId = "videosKR")
-      .setSparkRepository[Video]("videosMXRepository", deliveryId = "videosMX")
-      .setSparkRepository[Video]("videosRURepository", deliveryId = "videosRU")
-      .setSparkRepository[Video]("videosUSRepository", deliveryId = "videosUS")
+      .setSparkRepository[Video]("videosCARepository", deliveryId = "videosCA", readCache = true)
+      .setSparkRepository[Video]("videosDERepository", deliveryId = "videosDE", readCache = true)
+      .setSparkRepository[Video]("videosFRRepository", deliveryId = "videosFR", readCache = true)
+      .setSparkRepository[Video]("videosGBRepository", deliveryId = "videosGB", readCache = true)
+      .setSparkRepository[Video]("videosINRepository", deliveryId = "videosIN", readCache = true)
+      .setSparkRepository[Video]("videosJPRepository", deliveryId = "videosJP", readCache = true)
+      .setSparkRepository[Video]("videosKRRepository", deliveryId = "videosKR", readCache = true)
+      .setSparkRepository[Video]("videosMXRepository", deliveryId = "videosMX", readCache = true)
+      .setSparkRepository[Video]("videosRURepository", deliveryId = "videosRU", readCache = true)
+      .setSparkRepository[Video]("videosUSRepository", deliveryId = "videosUS", readCache = true)
       .setSparkRepository[VideoCountry]("videosRepository")
       .setSparkRepository[VideoStats]("videosStatsRepository")
 

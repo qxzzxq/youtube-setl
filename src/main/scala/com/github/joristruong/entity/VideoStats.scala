@@ -1,14 +1,12 @@
 package com.github.joristruong.entity
 
-import java.sql.Date
-
 import com.jcdecaux.setl.annotation.ColumnName
 
 case class VideoStats(@ColumnName("video_id") videoId: String,
                       title: String,
                       @ColumnName("channel_title") channelTitle: String,
                       @ColumnName("category_id") categoryId: String,
-                      @ColumnName("trending_date") trendingDate: Date,
+                      @ColumnName("trending_date") trendingDate: String,
                       views: Long,
                       likes: Long,
                       dislikes: Long,
